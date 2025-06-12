@@ -1,0 +1,92 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Pétalas - Viagens Inesquecíveis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <img src="logo.png" alt="Logo Agência Pétalas" class="logo">
+            
+            <nav>
+                <ul>
+                    <li><a href="site.html">Home</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  
+  <img class="banner" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Paisagem de viagem">
+
+
+  <section id="personalizado" class="container">
+        <h2>Monte seu pacote personalizado</h2>
+        <p>Não encontrou o pacote ideal? Nós criamos um especialmente para você!</p>
+        
+        <form id="form-personalizado">
+            <div class="form-group">
+                <label for="destino">Destino desejado:</label>
+                <input type="text" id="destino" name="destino" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="data">Data de partida:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="duracao">Duração da viagem (dias):</label>
+                <input type="number" id="duracao" name="duracao" min="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="hospedagem">Tipo de hospedagem:</label>
+                <select id="hospedagem" name="hospedagem" required>
+                    <option value="">Selecione...</option>
+                    <option value="hostel">Hostel</option>
+                    <option value="3estrelas">Hotel 3 estrelas</option>
+                    <option value="4estrelas">Hotel 4 estrelas</option>
+                    <option value="5estrelas">Hotel 5 estrelas</option>
+                    <option value="apartamento">Apartamento</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="passeios">Passeios desejados:</label>
+                <textarea id="passeios" name="passeios" rows="4"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="orcamento">Orçamento aproximado:</label>
+                <input type="text" id="orcamento" name="orcamento">
+            </div>
+            
+            <button type="submit" class="btn">Solicitar orçamento</button>
+        </form>
+    </section>
+
+        <footer>
+        <img src="logo.png" alt="Logo Agência Pétalas" class="logo">
+        
+        <div class="redes-sociais">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <p class="copyright">&copy; Copyright Agência Pétalas - 2023</p>
+    </footer>
+</body>
+</html>
+    
