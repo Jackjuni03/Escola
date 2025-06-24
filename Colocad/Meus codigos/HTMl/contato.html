@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Pétalas - Viagens Inesquecíveis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <img src="logo.png" alt="Logo Agência Pétalas" class="logo">
+            
+            <nav>
+                <ul>
+                    <li><a href="site.html">Home</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 48%;">
+                    <h3>Informações de contato</h3>
+                    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                    <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+                    <p><strong>Email:</strong> contato@dreamtravel.com.br</p>
+                    <p><strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo/SP</p>
+                    <p><strong>Horário de atendimento:</strong> Segunda a sexta, das 9h às 18h</p>
+                </div>
+                
+                <div style="width: 48%;">
+                    <h3>Envie sua mensagem</h3>
+                    <form id="form-contato">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar mensagem</button>
+                    </form>
+                    <a>batata doce</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+        <footer>
+        <img src="logo.png" alt="Logo Agência Pétalas" class="logo">
+        
+        <div class="redes-sociais">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <p class="copyright">&copy; Copyright Agência Pétalas - 2023</p>
+    </footer>
+</body>
+</html>

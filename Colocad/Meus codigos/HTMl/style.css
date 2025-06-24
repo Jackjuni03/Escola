@@ -1,0 +1,329 @@
+/* Estilos Gerais */
+:root {
+    --cor-primaria: #4a6fa5;
+    --cor-secundaria: #02d5ff;
+    --cor-clara: #f8f9fa;
+    --cor-escura: #4e0168;
+    --cor-texto: #341146;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    background-color: var(--cor-clara);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.caixa {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 180px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1em 0;
+    color: var(--cor-primaria);
+    position: relative;
+}
+
+.titulo-principal::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--cor-secundaria);
+    margin: 10px auto;
+}
+
+.principal {
+    padding: 3em 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.principal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+}
+
+.principal p {
+    margin: 0 0 1em;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.principal strong {
+    color: var(--cor-primaria);
+}
+
+.principal em {
+    font-style: italic;
+    color: var(--cor-secundaria);
+}
+
+#missao {
+    background-color: rgba(74, 111, 165, 0.1);
+    padding: 15px;
+    border-left: 4px solid var(--cor-secundaria);
+    margin: 20px 0;
+}
+
+.utensilios {
+    width: 170px;
+    float:inline-start;
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.utensilios:hover {
+    transform: rotate(-5deg);
+}
+
+/* Mapa */
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(rgb(155, 226, 249), #89e3ee);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    
+}
+
+.mapa-conteudo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+}
+
+/* Benefícios */
+.beneficios {
+    padding: 3em 0;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    border-radius: 10px;
+    color: white;
+}
+
+.conteudo-beneficios {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.lista-beneficios {
+    flex: 1;
+    min-width: 300px;
+}
+
+.itens {
+    line-height: 2;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.itens::before {
+    content: "✈️";
+    position: absolute;
+    left: 0;
+}
+
+.imagem-beneficios {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.imagem-beneficios:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Vídeo */
+.video {
+    width: 90%;
+    max-width: 800px;
+    margin: 3em auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: linear-gradient(purple,pink) ;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--cor-escura), #000);
+   color: linear-gradient(rgb(234, 216, 234),pink) ;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    
+    font-size: 24px;
+    transition: all 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: rgb(196, 4, 255);
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .caixa {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .banner {
+        height: 50vh;
+    }
+    
+    .utensilios {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    .conteudo-beneficios {
+        flex-direction: column;
+    }
+    
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
